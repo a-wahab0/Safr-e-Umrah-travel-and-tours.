@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Safr e Umrah Travel &amp; Tours</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&amp;family=Outfit:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    .gold-gradient { background: linear-gradient(135deg, #c9a84c 0%, #f0d78c 50%, #c9a84c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .pattern-bg { background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c9a84c' fill-opacity='0.06'%3E%3Cpath d='M30 0L60 30L30 60L0 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes shimmer { 0%{background-position:-200% center;} 100%{background-position:200% center;} }
+    .fade-up { animation: fadeUp 0.8s ease forwards; opacity:0; }
+    .delay-1 { animation-delay:0.15s; } .delay-2 { animation-delay:0.3s; } .delay-3 { animation-delay:0.45s; } .delay-4 { animation-delay:0.6s; } .delay-5 { animation-delay:0.75s; }
+    .shimmer-text { background: linear-gradient(90deg, #c9a84c, #f0d78c, #c9a84c, #f0d78c); background-size: 200% auto; -webkit-background-clip:text; -webkit-text-fill-color:transparent; animation: shimmer 4s linear infinite; }
+    .card-hover { transition: all 0.4s cubic-bezier(0.25,0.46,0.45,0.94); }
+    .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+    .star-pattern::before { content:'✦'; position:absolute; font-size:10px; color:rgba(201,168,76,0.15); }
+    html { scroll-behavior: smooth; }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
+  <div id="app" class="w-full h-full overflow-auto" style="background-color:#0a0f1a; color:#e8e0d0; font-family:'Outfit',sans-serif;"><!-- Nav -->
+   <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500" style="background:rgba(10,15,26,0.85); backdrop-filter:blur(12px); border-bottom:1px solid rgba(201,168,76,0.15);">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between flex-wrap md:flex-nowrap gap-3">
+     <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-full flex items-center justify-center" style="background:linear-gradient(135deg,#c9a84c,#8a6914);"><span style="font-family:'Amiri',serif; font-size:20px; color:#0a0f1a; font-weight:700;">ص</span>
+      </div>
+      <div>
+       <div id="nav-title" class="text-sm font-semibold tracking-wide" style="color:#c9a84c;">
+        Safr e Umrah
+       </div>
+       <div class="text-[10px] tracking-widest uppercase" style="color:#8a8070;">
+        Travel &amp; Tours
+       </div>
+      </div>
+     </div>
+     <div class="hidden md:flex gap-6 text-sm" style="color:#a89e8e;"><a href="#home" class="hover:text-[#c9a84c] transition-colors">Home</a> <a href="#packages" class="hover:text-[#c9a84c] transition-colors">Packages</a> <a href="#about" class="hover:text-[#c9a84c] transition-colors">About</a> <a href="#contact" class="hover:text-[#c9a84c] transition-colors">Contact</a>
+     </div><a href="#contact" class="px-3 md:px-4 py-2 rounded-full text-xs font-semibold transition-all hover:scale-105" style="background:linear-gradient(135deg,#c9a84c,#8a6914); color:#0a0f1a;">Book Now</a>
+    </div>
+   </nav><!-- Hero -->
+   <section id="home" class="relative pattern-bg flex items-center justify-center text-center px-4" style="min-height:100%; padding-top:80px; padding-bottom:60px;">
+    <div class="absolute inset-0" style="background:radial-gradient(ellipse at center, rgba(201,168,76,0.08) 0%, transparent 70%);"></div>
+    <div class="relative z-10 max-w-3xl mx-auto">
+     <div class="fade-up mb-4"><span class="inline-block px-4 py-1 rounded-full text-[11px] tracking-widest uppercase" style="border:1px solid rgba(201,168,76,0.3); color:#c9a84c;">✦ Your Sacred Journey Begins Here ✦</span>
+     </div>
+     <h1 id="hero-title" class="fade-up delay-1 shimmer-text mb-3" style="font-family:'Amiri',serif; font-size:clamp(2.5rem,6vw,4.5rem); line-height:1.1; font-weight:700;">Safr e Umrah<br>
+       Travel &amp; Tours</h1>
+     <p id="hero-tagline" class="fade-up delay-2 text-lg md:text-xl mb-8 max-w-xl mx-auto" style="color:#a89e8e; font-weight:300;">Experience a spiritually fulfilling Umrah journey with trusted guidance, premium comfort, and complete peace of mind.</p>
+     <div class="fade-up delay-3 flex flex-col gap-3 justify-center w-full px-4 mx-auto"><a href="#packages" class="px-6 md:px-8 py-3 rounded-full font-semibold text-sm transition-all hover:scale-105 hover:shadow-lg" style="background:linear-gradient(135deg,#c9a84c,#8a6914); color:#0a0f1a;"> View Packages </a> <a href="tel:03105862560" class="px-6 md:px-8 py-3 rounded-full font-semibold text-sm transition-all hover:scale-105 flex items-center justify-center gap-2" style="border:1px solid rgba(201,168,76,0.4); color:#c9a84c;"> <i data-lucide="phone" style="width:16px;height:16px;"></i> Call Now </a>
+     </div><!-- Trust badges -->
+     <div class="fade-up delay-4 mt-12 flex flex-wrap justify-center gap-6">
+      <div class="flex items-center gap-2 text-xs" style="color:#8a8070;">
+       <i data-lucide="users" style="width:16px;height:16px;color:#c9a84c;"></i> 1000+ Happy Pilgrims
+      </div>
+      <div class="flex items-center gap-2 text-xs" style="color:#8a8070;">
+       <i data-lucide="star" style="width:16px;height:16px;color:#c9a84c;"></i> 5-Star Hotels
+      </div>
+     </div>
+    </div>
+   </section><!-- Packages -->
+   <section id="packages" class="px-4 py-20" style="background:#0d1220;">
+    <div class="max-w-6xl mx-auto">
+     <div class="text-center mb-14"><span class="text-[11px] tracking-widest uppercase" style="color:#c9a84c;">✦ Our Offerings ✦</span>
+      <h2 class="mt-2" style="font-family:'Amiri',serif; font-size:clamp(1.8rem,4vw,2.8rem); color:#e8e0d0;">Umrah Packages</h2>
+      <p class="mt-2 text-sm" style="color:#8a8070;">Tailored for every budget with unmatched quality</p>
+     </div>
+     <div class="grid md:grid-cols-3 gap-4 md:gap-6"><!-- Economy -->
+      <div class="card-hover rounded-2xl p-6 relative overflow-hidden" style="background:linear-gradient(160deg,#111827,#0d1220); border:1px solid rgba(201,168,76,0.12);">
+       <div class="absolute top-0 right-0 w-24 h-24 rounded-bl-full" style="background:rgba(201,168,76,0.04);"></div>
+       <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background:rgba(201,168,76,0.1);"><i data-lucide="compass" style="width:22px;height:22px;color:#c9a84c;"></i>
+       </div>
+       <h3 class="text-lg font-semibold mb-1" style="color:#e8e0d0;">Economy Package</h3>
+       <p class="text-xs mb-4" style="color:#8a8070;">Affordable spiritual journey</p>
+       <ul class="space-y-2 mb-6 text-left">
+        <li class="flex items-center gap-2 text-sm" style="color:#a89e8e;"><i data-lucide="check-circle" style="width:14px;height:14px;color:#c9a84c;"></i> Visa Processing</li>
+        <li class="flex items-center gap-2 text-sm" style="color:#a89e8e;"><i data-lucide="check-circle" style="width:14px;height:14px;color:#c9a84c;"></i> 3-Star Hotel</li>
+        <li class="flex items-center gap-2 text-sm" style="color:#a89e8e;"><i data-lucide="check-circle" style="width:14px;height:14px;color:#c9a84c;"></i> Transport Included</li>
+        <li class="flex items-center gap-2 text-sm" style="color:#a89e8e;"><i data-lucide="check-circle" style="width:14px;height:14px;color:#c9a84c;"></i> Guided Ziyarat</li>
+       </ul><a href="#contact" class="block text-center py-2.5 rounded-full text-sm font-semibold transition-all hover:scale-105 w-full" style="border:1px solid rgba(201,168,76,0.3); color:#c9a84c;">Inquire Now</a>
+      </div><!-- Premium -->
+      <div class="card-hover rounded-2xl p-6 relative overflow-hidden" style="background:linear-gradient(160deg,#1a1a2e,#111827); border:1px solid rgba(201,168,76,0.3);">
+       <div class="absolute top-0 right-0 px-3 py-1 rounded-bl-xl text-[10px] font-bold tracking-wider uppercase" style="background:linear-gradient(135deg,#c9a84c,#8a6914); color:#0a0f1a;">
+        Popular
+       </div>
+       <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background:rgba(201,168,76,0.15);"><i data-lucide="gem" style="width:22px;height:22px;color:#c9a84c;"></i>
+       </div>
+       <h3 class="text-lg font-semibold mb-1" style="color:#f0d78c;">Premium Package</h3>
+       <p class="text-xs mb-4" style="color:#8a8070;">Comfort meets devotion</p>
+       <ul class="space-y-2 mb-6 text-left">
+        <li class="flex items-center gap-2 text-sm" style="color:#a89e8e;"><i data-lucide="check-circle" style="width:14px;height:14px;color:#c9a84c;"></i> Visa Processing</li>
+        <li class="flex items-center gap-2 text-sm" style="color:#a89e8e;"><i data-lucide="check-circle" style="width:14px;height:14px;color:#c9a84c;"></i> 4-Star Hotel (Near Haram)</li>
+        <li class="flex items-center gap-2 text-sm" style="color:#a89e8e;"><i data-lucide="check-circle" style="width:14px;height:14px;color:#c9a84c;"></i> Private Transport</li>
+        <li class="flex items-center gap-2 text-sm" style="color:#a89e8e;"><i data-lucide="check-circle" style="width:14px;height:14px;color:#c9a84c;"></i> Full Board Meals</li>
+        <li class="flex items-center gap-2 text-sm" style="color:#a89e8e;"><i data-lucide="check-circle" style="width:14px;height:14px;color:#c9a84c;"></i> Guided Ziyarat</li>
+       </ul><a href="#contact" class="block text-center py-2.5 rounded-full text-sm font-semibold transition-all hover:scale-105 w-full" style="background:linear-gradient(135deg,#c9a84c,#8a6914); color:#0a0f1a;">Inquire Now</a>
+      </div><!-- VIP -->
+      <div class="card-hover rounded-2xl p-6 relative overflow-hidden" style="background:linear-gradient(160deg,#111827,#0d1220); border:1px solid rgba(201,168,76,0.12);">
+       <div class="absolute top-0 right-0 w-24 h-24 rounded-bl-full" style="background:rgba(201,168,76,0.04);"></div>
+       <div class="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style="background:rgba(201,168,76,0.1);"><i data-lucide="crown" style="width:22px;height:22px;color:#c9a84c;"></i>
+       </div>
+       <h3 class="text-lg font-semibold mb-1" style="color:#e8e0d0;">VIP Package</h3>
+       <p class="text-xs mb-4" style="color:#8a8070;">Ultimate luxury experience</p>
+       <ul class="space-y-2 mb-6 text-left">
+        <li class="flex items-center gap-2 text-sm" style="color:#a89e8e;"><i data-lucide="check-circle" style="width:14px;height:14px;color:#c9a84c;"></i> Express Visa</li>
+        <li class="flex items-center gap-2 text-sm" style="color:#a89e8e;"><i data-lucide="check-circle" style="width:14px;height:14px;color:#c9a84c;"></i> 5-Star Hotel (Haram View)</li>
+        <li class="flex items-center gap-2 text-sm" style="color:#a89e8e;"><i data-lucide="check-circle" style="width:14px;height:14px;color:#c9a84c;"></i> Luxury Private Transport</li>
+        <li class="flex items-center gap-2 text-sm" style="color:#a89e8e;"><i data-lucide="check-circle" style="width:14px;height:14px;color:#c9a84c;"></i> Premium Dining</li>
+        <li class="flex items-center gap-2 text-sm" style="color:#a89e8e;"><i data-lucide="check-circle" style="width:14px;height:14px;color:#c9a84c;"></i> Personal Guide 24/7</li>
+       </ul><a href="#contact" class="block text-center py-2.5 rounded-full text-sm font-semibold transition-all hover:scale-105 w-full" style="border:1px solid rgba(201,168,76,0.3); color:#c9a84c;">Inquire Now</a>
+      </div>
+     </div>
+    </div>
+   </section><!-- About -->
+   <section id="about" class="px-4 py-20 pattern-bg">
+    <div class="max-w-4xl mx-auto text-center"><span class="text-[11px] tracking-widest uppercase" style="color:#c9a84c;">✦ Who We Are ✦</span>
+     <h2 class="mt-2 mb-6" style="font-family:'Amiri',serif; font-size:clamp(1.8rem,4vw,2.8rem); color:#e8e0d0;">About Safr e Umrah</h2>
+     <p id="about-text" class="text-base leading-relaxed mb-10" style="color:#a89e8e;">Safr e Umrah Travel &amp; Tours is a trusted name in providing exceptional Umrah services. With years of experience, we are dedicated to making your sacred journey comfortable, affordable, and spiritually enriching. From visa processing to premium accommodation near the Holy Haram, we handle every detail so you can focus on your ibadah.</p>
+     <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="rounded-xl p-5" style="background:rgba(201,168,76,0.06); border:1px solid rgba(201,168,76,0.1);">
+       <div class="text-2xl font-bold" style="color:#c9a84c;">
+        7+
+       </div>
+       <div class="text-xs mt-1" style="color:#8a8070;">
+        Years Experience
+       </div>
+      </div>
+      <div class="rounded-xl p-5" style="background:rgba(201,168,76,0.06); border:1px solid rgba(201,168,76,0.1);">
+       <div class="text-2xl font-bold" style="color:#c9a84c;">
+        1000+
+       </div>
+       <div class="text-xs mt-1" style="color:#8a8070;">
+        Happy Pilgrims
+       </div>
+      </div>
+      <div class="rounded-xl p-5" style="background:rgba(201,168,76,0.06); border:1px solid rgba(201,168,76,0.1);">
+       <div class="text-2xl font-bold" style="color:#c9a84c;">
+        100%
+       </div>
+       <div class="text-xs mt-1" style="color:#8a8070;">
+        Visa Success
+       </div>
+      </div>
+      <div class="rounded-xl p-5" style="background:rgba(201,168,76,0.06); border:1px solid rgba(201,168,76,0.1);">
+       <div class="text-2xl font-bold" style="color:#c9a84c;">
+        24/7
+       </div>
+       <div class="text-xs mt-1" style="color:#8a8070;">
+        Support
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Contact -->
+   <section id="contact" class="px-4 py-20" style="background:#0d1220;">
+    <div class="max-w-5xl mx-auto">
+     <div class="text-center mb-12"><span class="text-[11px] tracking-widest uppercase" style="color:#c9a84c;">✦ Get In Touch ✦</span>
+      <h2 class="mt-2" style="font-family:'Amiri',serif; font-size:clamp(1.8rem,4vw,2.8rem); color:#e8e0d0;">Contact Us</h2>
+     </div>
+     <div class="grid md:grid-cols-2 gap-6 md:gap-8"><!-- Contact Info -->
+      <div class="rounded-2xl p-8" style="background:linear-gradient(160deg,#111827,#0d1220); border:1px solid rgba(201,168,76,0.15);">
+       <h3 class="text-xl font-semibold mb-6" style="color:#f0d78c; font-family:'Amiri',serif;">Speak With Us</h3>
+       <div class="space-y-5">
+        <div class="flex items-start gap-4">
+         <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background:rgba(201,168,76,0.1);"><i data-lucide="user" style="width:18px;height:18px;color:#c9a84c;"></i>
+         </div>
+         <div>
+          <div class="text-xs uppercase tracking-wider mb-1" style="color:#8a8070;">
+           Contact Person
+          </div>
+          <div id="contact-name" class="font-semibold" style="color:#e8e0d0;">
+           Tahir Nawaz
+          </div>
+         </div>
+        </div>
+        <div class="flex items-start gap-4">
+         <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background:rgba(201,168,76,0.1);"><i data-lucide="phone" style="width:18px;height:18px;color:#c9a84c;"></i>
+         </div>
+         <div>
+          <div class="text-xs uppercase tracking-wider mb-1" style="color:#8a8070;">
+           Phone / WhatsApp
+          </div><a id="contact-number-link" href="tel:03105862560" class="font-semibold hover:underline" style="color:#c9a84c;"> <span id="contact-number">0310-5862560</span> </a>
+         </div>
+        </div>
+        <div class="flex items-start gap-4">
+         <div class="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0" style="background:rgba(201,168,76,0.1);"><i data-lucide="map-pin" style="width:18px;height:18px;color:#c9a84c;"></i>
+         </div>
+         <div>
+          <div class="text-xs uppercase tracking-wider mb-1" style="color:#8a8070;">
+           Location
+          </div>
+          <div class="font-semibold" style="color:#e8e0d0;">
+           Pakistan
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="mt-8 flex flex-col md:flex-row gap-3"><a href="https://wa.me/923105862560" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 rounded-full text-sm font-semibold text-center flex items-center justify-center gap-2 transition-all hover:scale-105" style="background:linear-gradient(135deg,#25d366,#128c3e); color:#fff;"> <i data-lucide="message-circle" style="width:16px;height:16px;"></i> WhatsApp </a> <a href="tel:03105862560" class="flex-1 py-3 rounded-full text-sm font-semibold text-center flex items-center justify-center gap-2 transition-all hover:scale-105" style="background:linear-gradient(135deg,#c9a84c,#8a6914); color:#0a0f1a;"> <i data-lucide="phone" style="width:16px;height:16px;"></i> Call Now </a>
+       </div>
+      </div><!-- Inquiry Form -->
+      <div class="rounded-2xl p-8" style="background:linear-gradient(160deg,#111827,#0d1220); border:1px solid rgba(201,168,76,0.15);">
+       <h3 class="text-xl font-semibold mb-6" style="color:#f0d78c; font-family:'Amiri',serif;">Send Inquiry</h3>
+       <form id="inquiry-form" class="space-y-4">
+        <div><label for="name" class="text-xs uppercase tracking-wider mb-1 block" style="color:#8a8070;">Your Name</label> <input type="text" id="name" required class="w-full px-4 py-3 rounded-lg text-sm outline-none focus:ring-2" style="background:rgba(201,168,76,0.06); border:1px solid rgba(201,168,76,0.15); color:#e8e0d0; --tw-ring-color:rgba(201,168,76,0.4);">
+        </div>
+        <div><label for="phone" class="text-xs uppercase tracking-wider mb-1 block" style="color:#8a8070;">Phone Number</label> <input type="tel" id="phone" required class="w-full px-4 py-3 rounded-lg text-sm outline-none focus:ring-2" style="background:rgba(201,168,76,0.06); border:1px solid rgba(201,168,76,0.15); color:#e8e0d0; --tw-ring-color:rgba(201,168,76,0.4);">
+        </div>
+        <div><label for="pkg-select" class="text-xs uppercase tracking-wider mb-1 block" style="color:#8a8070;">Preferred Package</label> <select id="pkg-select" class="w-full px-4 py-3 rounded-lg text-sm outline-none focus:ring-2" style="background:rgba(201,168,76,0.06); border:1px solid rgba(201,168,76,0.15); color:#e8e0d0; --tw-ring-color:rgba(201,168,76,0.4);"> <option value="">Select a package</option> <option>Economy Package</option> <option>Premium Package</option> <option>VIP Package</option> </select>
+        </div>
+        <div><label for="message" class="text-xs uppercase tracking-wider mb-1 block" style="color:#8a8070;">Message</label> <textarea id="message" rows="3" class="w-full px-4 py-3 rounded-lg text-sm outline-none focus:ring-2 resize-none" style="background:rgba(201,168,76,0.06); border:1px solid rgba(201,168,76,0.15); color:#e8e0d0; --tw-ring-color:rgba(201,168,76,0.4);"></textarea>
+        </div><button type="submit" class="w-full py-3 rounded-full text-sm font-semibold transition-all hover:scale-105" style="background:linear-gradient(135deg,#c9a84c,#8a6914); color:#0a0f1a;">Send Inquiry</button>
+       </form>
+       <div id="form-success" class="hidden mt-4 p-4 rounded-lg text-center text-sm" style="background:rgba(37,211,102,0.1); border:1px solid rgba(37,211,102,0.3); color:#25d366;">
+        ✓ Thank you! We will contact you shortly.
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer class="px-4 py-8 text-center" style="background:#080c16; border-top:1px solid rgba(201,168,76,0.1);">
+    <p class="text-xs" style="color:#5a5448;">© 2025 All Rights Reserved</p>
+   </footer>
+  </div>
+  <script>
+  // Form handling
+  document.getElementById('inquiry-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    this.style.display = 'none';
+    document.getElementById('form-success').classList.remove('hidden');
+    setTimeout(() => {
+      this.style.display = '';
+      this.reset();
+      document.getElementById('form-success').classList.add('hidden');
+    }, 4000);
+  });
+
+  // Element SDK
+  const defaultConfig = {
+    agency_name: 'Safr e Umrah Travel & Tours',
+    hero_tagline: 'Experience a spiritually fulfilling Umrah journey with trusted guidance, premium comfort, and complete peace of mind.',
+    contact_name: 'Tahir Nawaz',
+    contact_number: '0310-5862560',
+    about_text: 'Safr e Umrah Travel & Tours is a trusted name in providing exceptional Umrah services. With years of experience, we are dedicated to making your sacred journey comfortable, affordable, and spiritually enriching. From visa processing to premium accommodation near the Holy Haram, we handle every detail so you can focus on your ibadah.',
+    background_color: '#0a0f1a',
+    surface_color: '#111827',
+    text_color: '#e8e0d0',
+    accent_color: '#c9a84c',
+    secondary_action_color: '#8a8070',
+    font_family: 'Outfit',
+    font_size: 16
+  };
+
+  function applyConfig(config) {
+    const c = { ...defaultConfig, ...config };
+    // Text content
+    document.getElementById('hero-title').innerHTML = c.agency_name.replace('Travel & Tours','<br>Travel & Tours');
+    document.getElementById('hero-tagline').textContent = c.hero_tagline;
+    document.getElementById('contact-name').textContent = c.contact_name;
+    document.getElementById('contact-number').textContent = c.contact_number;
+    document.getElementById('about-text').textContent = c.about_text;
+    document.getElementById('nav-title').textContent = c.agency_name.split(' Travel')[0] || c.agency_name;
+
+
+    // Colors
+    const app = document.getElementById('app');
+    app.style.backgroundColor = c.background_color;
+    app.style.color = c.text_color;
+    app.style.fontFamily = `${c.font_family}, Outfit, sans-serif`;
+
+    // Font size scaling
+    const base = c.font_size;
+    document.getElementById('hero-tagline').style.fontSize = `${base * 1.15}px`;
+    document.getElementById('about-text').style.fontSize = `${base}px`;
+  }
+
+  window.elementSdk.init({
+    defaultConfig,
+    onConfigChange: async (config) => applyConfig(config),
+    mapToCapabilities: (config) => {
+      const c = { ...defaultConfig, ...config };
+      return {
+        recolorables: [
+          { get: () => c.background_color, set: (v) => { config.background_color = v; window.elementSdk.setConfig({ background_color: v }); } },
+          { get: () => c.surface_color, set: (v) => { config.surface_color = v; window.elementSdk.setConfig({ surface_color: v }); } },
+          { get: () => c.text_color, set: (v) => { config.text_color = v; window.elementSdk.setConfig({ text_color: v }); } },
+          { get: () => c.accent_color, set: (v) => { config.accent_color = v; window.elementSdk.setConfig({ accent_color: v }); } },
+          { get: () => c.secondary_action_color, set: (v) => { config.secondary_action_color = v; window.elementSdk.setConfig({ secondary_action_color: v }); } }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => c.font_family,
+          set: (v) => { config.font_family = v; window.elementSdk.setConfig({ font_family: v }); }
+        },
+        fontSizeable: {
+          get: () => c.font_size,
+          set: (v) => { config.font_size = v; window.elementSdk.setConfig({ font_size: v }); }
+        }
+      };
+    },
+    mapToEditPanelValues: (config) => {
+      const c = { ...defaultConfig, ...config };
+      return new Map([
+        ['agency_name', c.agency_name],
+        ['hero_tagline', c.hero_tagline],
+        ['contact_name', c.contact_name],
+        ['contact_number', c.contact_number],
+        ['about_text', c.about_text]
+      ]);
+    }
+  });
+
+  lucide.createIcons();
+</script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e77df9864a94128',t:'MTc3NTM4NDk4NC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
